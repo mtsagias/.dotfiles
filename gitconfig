@@ -1,0 +1,23 @@
+[user]
+	name = Manolis Tsagias
+	email = manolis@tsagias.com
+[core]
+	excludesfile = /Users/manolis/.gitignore_global
+	editor = vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[github]
+	user = mtsagias
+[alias]
+	co = checkout
+	st = status
+  showtree = !git log --graph --all --decorate --oneline
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[credential]
+	helper = osxkeychain

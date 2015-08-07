@@ -1,0 +1,12 @@
+Host me-heroku
+  HostName git.heroku.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+
+Host sunsoft-heroku
+  HostName git.heroku.com
+  User git
+  IdentityFile ~/.ssh/sunsoft_rsa
+  IdentitiesOnly yes
+
