@@ -1,0 +1,16 @@
+name: "depot.4"
+windows:
+  - name: "vim"
+    root: "~/Developer/Projects/work/depot.4"
+    layout: "even-horizontal"
+    panes:
+      - "vim"
+      - "guard"
+  - name: "server"
+    root: "~/Developer/Projects/work/depot.4"
+    panes:
+      - "bundle exec rails s"
+  - name: "log"
+    root: "~/Developer/Projects/work/depot.4"
+    panes:
+      - "tail -f log/development.log"

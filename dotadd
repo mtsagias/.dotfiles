@@ -1,0 +1,44 @@
+#!/usr/bin/env ruby
+require 'yaml'
+require 'pathname'
+require 'fileutils'
+
+include FileUtils
+
+DOTFILES = '~/.dotfiles'
+# DOTFILES = './dotfiles'
+CONF_FILE = 'install.conf.yaml'
+options = {}
+# options = { noop: true, verbose: true }
+
+@dot_files = Pathname.new(File.expand_path(DOTFILES))
+return unless @dot_files.exist? && @dot_files.directory?
+
+def self.update_conf(source, dest)
+  conf = YAML.load_file(@dot_files + CONF_FILE)
+  # puts conf.class
+  # puts conf
+  conf.last['link']['~/' + source] = {
+    'path' => dest.to_s,
+    'create' => File.directory?(source),
+    'relink' => false,
+    'force' => false
+  }
+  File.open(@dot_files + CONF_FILE, 'w') { |file| YAML.dump(conf, file) }
+end
+
+ARGV.each do |arg|
+  next unless File.exist?(arg)
+  name = arg.dup
+  dot = name[0] == '.' ? name.slice!(0) : ''
+  if File.exist?(@dot_files + name)
+    puts "#{@dot_files + name} already exists. Moving on."
+    next
+  end
+  parent = Pathname.new(@dot_files + name).parent
+  mkdir_p(parent) unless File.exist?(parent)
+  mv(dot + name, @dot_files + name, options.merge(force: true))
+  ln_s(@dot_files + name, dot + name, options)
+  puts "Moved and symlinked #{dot + name}"
+  update_conf(dot + name, name)
+end

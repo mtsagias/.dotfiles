@@ -1,0 +1,16 @@
+name: "budget"
+windows:
+  - name: "vim"
+    root: "~/Developer/Projects/work/mybudget"
+    layout: "even-horizontal"
+    panes:
+      - "vim"
+      - "guard"
+  - name: "server"
+    root: "~/Developer/Projects/work/mybudget"
+    panes:
+      - "bundle exec rails s"
+  - name: "log"
+    root: "~/Developer/Projects/work/mybudget"
+    panes:
+      - "less +F log/development.log"

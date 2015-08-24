@@ -1,0 +1,11 @@
+name: "amvrosia"
+windows:
+  - name: "vim"
+    focus: true
+    root: "~/Developer/Projects/work/sunsoft/AmvrosiaRR"
+    layout: "main-vertical"
+    panes:
+      - focus: true
+        commands:
+          - "vim"
+      - "guard"

@@ -1,0 +1,13 @@
+windows:
+  - name: "shell"
+    layout: "even-horizontal"
+    panes:
+      - focus: true
+      - "guard"
+  - name: "irb"
+    layout: "even-horizontal"
+    panes:
+      - focus: true
+        commands:
+          - "bundle console"
+      - "devlog"

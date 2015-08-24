@@ -1,0 +1,29 @@
+name: "amvrosia"
+windows:
+  - name: "shell"
+    focus: true
+    root: "~/Developer/Projects/work/rails-projects/sample_app"
+  - name: "vim"
+    root: "~/Developer/Projects/work/rails-projects/sample_app"
+    layout: "even-horizontal"
+    panes:
+      - focus: true
+        commands:
+          - "vim"
+      - "guard"
+  - name: "rails"
+    root: "~/Developer/Projects/work/rails-projects/sample_app"
+    layout: "even-horizontal"
+    panes:
+      - focus: true
+        commands:
+          - "rc"
+      - "devlog"
+  - name: "server"
+    root: "~/Developer/Projects/work/rails-projects/sample_app"
+    layout: "even-horizontal"
+    panes:
+      - focus: true
+        commands:
+        - "rails s"
+      - "devlog"

@@ -1,0 +1,15 @@
+'atom-text-editor.vim-mode:not(.insert-mode)':
+  'ctrl-o': 'last-cursor-position:previous'
+'atom-workspace':
+  'ctrl-alt-r c': 'rails-transporter:open-controller'
+  'ctrl-alt-r v f': 'rails-transporter:open-view-finder'
+  'ctrl-alt-r v': 'rails-transporter:open-view'
+  'ctrl-alt-r l': 'rails-transporter:open-layout'
+  'ctrl-alt-r m': 'rails-transporter:open-model'
+  'ctrl-alt-r h': 'rails-transporter:open-helper'
+  'ctrl-alt-r t': 'rails-transporter:open-test'
+  'ctrl-alt-r s': 'rails-transporter:open-spec'
+  'ctrl-alt-r p': 'rails-transporter:open-partial-template'
+  'ctrl-alt-r a': 'rails-transporter:open-asset'
+  'ctrl-alt-r d m': 'rails-transporter:open-migration-finder'
+  'ctrl-alt-r f': 'rails-transporter:open-factory'

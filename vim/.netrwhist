@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/manolis/Developer/Projects/work/sunsoft/test/print_engine/lib/printing'
+let g:netrw_dirhist_2='/Users/manolis/Developer/Projects/work/sunsoft/test/print_engine'
+let g:netrw_dirhist_3='/Users/manolis/Developer/Projects/work/sunsoft/test'
+let g:netrw_dirhist_4='/Users/manolis/Developer/Projects/work/sunsoft'
+let g:netrw_dirhist_5='/Users/manolis/Developer/Projects/work/sunsoft/test/print_engine'
+let g:netrw_dirhist_6='/Users/manolis/Developer/Projects/work/sunsoft/test/print_engine/lib'
+let g:netrw_dirhist_7='/Users/manolis/Developer/Projects/work/sunsoft/test/print_engine/lib/printing'
+let g:netrw_dirhist_8='/Users/manolis/tmp/dottest'
