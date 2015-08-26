@@ -6,21 +6,28 @@ require 'fileutils'
 include FileUtils
 
 DOTFILES = '~/.dotfiles'
-# DOTFILES = './dotfiles'
 CONF_FILE = 'install.conf.yaml'
-options = {}
-# options = { noop: true, verbose: true }
+@options = {}
+# @options = { noop: true, verbose: true } # Uncomment this line to debug
 
 @dot_files = Pathname.new(File.expand_path(DOTFILES))
 return unless @dot_files.exist? && @dot_files.directory?
 
-def self.update_conf(source, dest)
+def self.move_item(dot, name)
+  parent = Pathname.new(@dot_files + name).parent
+  mkdir_p(parent) unless File.exist?(parent)
+  mv(dot + name, @dot_files + name, @options.merge(force: true))
+end
+
+def self.link_item(dot, name)
+  ln_s(@dot_files + name, dot + name, @options)
+end
+
+def self.update_conf(dot, name)
   conf = YAML.load_file(@dot_files + CONF_FILE)
-  # puts conf.class
-  # puts conf
-  conf.last['link']['~/' + source] = {
-    'path' => dest.to_s,
-    'create' => File.directory?(source),
+  conf.last['link']['~/' + dot + name] = {
+    'path' => name.to_s,
+    'create' => File.directory?(dot + name),
     'relink' => false,
     'force' => false
   }
@@ -35,10 +42,8 @@ ARGV.each do |arg|
     puts "#{@dot_files + name} already exists. Moving on."
     next
   end
-  parent = Pathname.new(@dot_files + name).parent
-  mkdir_p(parent) unless File.exist?(parent)
-  mv(dot + name, @dot_files + name, options.merge(force: true))
-  ln_s(@dot_files + name, dot + name, options)
+  move_item(dot, name)
+  link_item(dot, name)
+  update_conf(dot, name)
   puts "Moved and symlinked #{dot + name}"
-  update_conf(dot + name, name)
 end
