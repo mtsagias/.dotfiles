@@ -36,3 +36,5 @@
   "autoclose-html": {}
   "ember-cli-helper": {}
   "rails-transporter": {}
+  jekyll:
+    serverPort: 4001
