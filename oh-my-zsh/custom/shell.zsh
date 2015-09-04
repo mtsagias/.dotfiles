@@ -31,7 +31,9 @@ add_project()
   echo function $1 \{ cd \"$2\" \} >> ~/.oh-my-zsh/custom/projects.zsh
 }
 
-export GEM_EDITOR='mine'
+export GEM_EDITOR='atom'
 export EDITOR='vim'
 export BUP_DIR=/Volumes/Lion/bup_sets
 export MONO_GAC_PREFIX="/usr/local"
+export GOPATH="${HOME}/Developer/Projects/work/tmp/go-tut"
+export PATH="${GOPATH}/bin:${PATH}"

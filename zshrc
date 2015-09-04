@@ -48,14 +48,16 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow-avh osx rbenv ruby rake bundler rails heroku brew brew-cask zsh_reload docker tmuxinator vagrant)
+plugins=(git git-flow-avh osx rbenv ruby rake bundler rails heroku brew brew-cask\
+         zsh_reload docker tmuxinator vagrant go)
 #plugins=()
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/manolis/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/MacGPG2/bin:/usr/local/sbin:~/Shell"
+# export PATH="${PATH}:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/MacGPG2/bin:/usr/local/sbin:~/Shell"
+export PATH="${PATH}:~/Shell"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
