@@ -35,8 +35,8 @@
     ~/.zshrc:
       path: zshrc
       create: false
-      relink: false
-      force: false
+      relink: true
+      force: true
     ~/.vim:
       path: vim
       create: true
@@ -50,8 +50,8 @@
     ~/.oh-my-zsh/custom:
       path: oh-my-zsh/custom
       create: true
-      relink: false
-      force: false
+      relink: true
+      force: true
     ~/.gemrc:
       path: gemrc
       create: false
@@ -70,15 +70,15 @@
     ~/.atom/config.cson:
       path: atom/config.cson
       create: false
-      relink: false
-      force: false
+      relink: true
+      force: true
     ~/.atom/keymap.cson:
       path: atom/keymap.cson
       create: false
-      relink: false
-      force: false
+      relink: true
+      force: true
     ~/.atom/snippets.cson:
       path: atom/snippets.cson
       create: false
-      relink: false
-      force: false
+      relink: true
+      force: true
