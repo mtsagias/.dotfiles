@@ -1,0 +1,2 @@
+cp -a ~/.bin ~/Dropbox/config
+cp ~/.gitconfig ~/.profile ~/.vimrc ~/Dropbox/config

@@ -80,10 +80,15 @@
     ~/.atom/snippets.cson:
       path: atom/snippets.cson
       create: false
+<<<<<<< Updated upstream
       relink: true
       force: true
+=======
+      relink: false
+      force: false
     ~/.bin:
       path: bin
       create: true
       relink: false
       force: false
+>>>>>>> Stashed changes
