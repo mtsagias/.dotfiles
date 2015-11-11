@@ -3,7 +3,7 @@ if run-help; then
 fi
 autoload run-help
 #HELPDIR=/usr/local/share/zsh/helpfiles
-HELPDIR=/usr/local/share/zsh/help
+export HELPDIR=/usr/local/share/zsh/help
  
 # Share history with bash
 HISTFILE=~/.bash_history
