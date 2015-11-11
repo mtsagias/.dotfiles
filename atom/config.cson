@@ -4,17 +4,13 @@
   welcome:
     showOnStartup: false
   core:
-    disabledPackages: [
-      "linter-ruby"
-      "linter-ruby"
-      "linter-ruby"
-    ]
     themes: [
       "atom-dark-ui"
       "railscasts-prime-syntax"
     ]
   editor:
     invisibles: {}
+    softWrap: true
   "vim-mode": {}
   autosave:
     enabled: true
@@ -38,3 +34,4 @@
   "rails-transporter": {}
   jekyll:
     serverPort: 4001
+  "tree-view": {}
