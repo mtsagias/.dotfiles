@@ -1,8 +1,11 @@
 "*":
-  "exception-reporting":
-    userId: "2be88276-5ec8-8dd4-032b-457f97710bac"
-  welcome:
-    showOnStartup: false
+  "atom-beautify":
+    _analyticsUserId: "280aab77-3ced-403a-9613-2c7619d4f7de"
+  "autoclose-html": {}
+  "autocomplete-python": {}
+  "autocomplete-ruby": {}
+  autosave:
+    enabled: true
   core:
     themes: [
       "atom-dark-ui"
@@ -11,27 +14,29 @@
   editor:
     invisibles: {}
     softWrap: true
-  "vim-mode": {}
-  autosave:
-    enabled: true
+  "ember-cli-helper": {}
+  "exception-reporting":
+    userId: "2be88276-5ec8-8dd4-032b-457f97710bac"
   "git-diff":
     showIconsInEditorGutter: true
-  "autocomplete-ruby": {}
-  "atom-beautify":
-    _analyticsUserId: "280aab77-3ced-403a-9613-2c7619d4f7de"
-  "merge-conflicts": {}
-  "ruby-block":
-    highlightLineNumber: true
-    showBottomPanel: false
+  jekyll:
+    serverPort: 4001
   linter:
     showErrorPanel: false
   "linter-rubocop":
     executablePath: "/Users/manolis/.rbenv/versions/2.0.0-p247/bin/rubocop"
   "linter-rubocop-caseywebdev":
     executablePath: "/Users/manolis/.rbenv/versions/2.0.0-p247/bin/rubocop"
-  "autoclose-html": {}
-  "ember-cli-helper": {}
+  "markdown-preview":
+    useGitHubStyle: true
+  "merge-conflicts": {}
   "rails-transporter": {}
-  jekyll:
-    serverPort: 4001
+  "ruby-block":
+    highlightLineNumber: true
+    showBottomPanel: false
+  "spell-check": {}
   "tree-view": {}
+  "vim-mode": {}
+  welcome:
+    showOnStartup: false
+  "xml-formatter": {}
