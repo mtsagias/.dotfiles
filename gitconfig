@@ -4,6 +4,7 @@
 [core]
 	excludesfile = /Users/manolis/.gitignore_global
 	editor = vim
+	quotepath = false
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -17,7 +18,8 @@
 	st = status
   showtree = !git log --graph --all --decorate --oneline
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
 [credential]
 	helper = osxkeychain

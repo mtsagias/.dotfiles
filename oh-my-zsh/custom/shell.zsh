@@ -11,6 +11,7 @@ HISTFILE=~/.bash_history
 alias h=history
 alias pbc='tmux show-buffer | pbcopy'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'|less"
+alias killorig="find . -name '*.orig' -print -exec rm {} \;"
 
 goo()
 {
@@ -31,9 +32,29 @@ add_project()
   echo function $1 \{ cd \"$2\" \} >> ~/.oh-my-zsh/custom/projects.zsh
 }
 
+wakeasus()
+{
+  wakeonlan -i 10.10.241.255 90:E6:BA:44:93:1A;
+}
+
 export GEM_EDITOR='atom'
 export EDITOR='vim'
 export BUP_DIR=/Volumes/Lion/bup_sets
 export MONO_GAC_PREFIX="/usr/local"
 export GOPATH="${HOME}/Developer/Projects/work/tmp/go-tut"
 export PATH="${GOPATH}/bin:${PATH}"
+export PATH="/usr/local/sbin:${PATH}"
+export PATH="/usr/local/sbin:${PATH}"
+export PATH="/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/bin:${PATH}"
+export HOMEBREW_CASK_OPTS="--caskroom=/opt/homebrew-cask/Caskroom"
+export PLANTUML_JAR="/usr/local/Cellar/plantuml/8053/libexec/plantuml.jar"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents"
+export GRAPHVIZ_DOT="/usr/local/Cellar/graphviz/2.40.1/bin/dot"
+export ASPNETCORE_ENVIRONMENT="Development"
+
+alias dbdrop='dotnet ef database drop'
+alias dbupdate='dotnet ef database update'
+alias migcreate='dotnet ef migrations add initial'
+alias av_recreate_migrations='cd SunSoft.PMS.Model && dbdrop && rm Migrations/* && migcreate && dbupdate && cd ..'
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
