@@ -48,7 +48,7 @@ export PATH="/usr/local/sbin:${PATH}"
 export PATH="/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/bin:${PATH}"
 export HOMEBREW_CASK_OPTS="--caskroom=/opt/homebrew-cask/Caskroom"
 export PLANTUML_JAR="/usr/local/Cellar/plantuml/8053/libexec/plantuml.jar"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents"
+export JAVA_HOME=$(/usr/libexec/java_home)
 export GRAPHVIZ_DOT="/usr/local/Cellar/graphviz/2.40.1/bin/dot"
 export ASPNETCORE_ENVIRONMENT="Development"
 

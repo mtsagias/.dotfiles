@@ -6,4 +6,4 @@ alias gtree='g showtree'
 alias glogm='glog --pretty=medium'
 alias glogf='glog --pretty=fuller'
 # github api token
-export HOMEBREW_GITHUB_API_TOKEN=7ebe3f9d2ca3eb40bec0ba7487b8664355403619
+export HOMEBREW_GITHUB_API_TOKEN=4809d5d904d4d9df3a4e9db53f3787d19f83255c

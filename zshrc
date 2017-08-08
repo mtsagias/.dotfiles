@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git git-flow-avh osx rbenv ruby rake bundler rails heroku brew brew-cask\
-         zsh_reload docker tmuxinator vagrant go)
+         zsh_reload docker docker-compose tmuxinator go)
 #plugins=()
 
 source $ZSH/oh-my-zsh.sh
@@ -76,3 +76,9 @@ export PATH="${PATH}:~/Shell"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+
+PATH="/Users/manolis/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/manolis/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/manolis/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/manolis/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/manolis/perl5"; export PERL_MM_OPT;

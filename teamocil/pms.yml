@@ -8,4 +8,4 @@ windows:
         commands:
           - "cd SunSoft.PMS.API; ASPNETCORE_URLS=\"http://localhost:5001\" dotnet run"
       - "cd SunSoft.PMS.FrontEnd; dotnet run"
-      - "cd ../sunsoft.auth/SunSoft.Auth.Service; ASPNETCORE_URLS=\"http://localhost:5555\" dotnet run"
+      #- "cd ../sunsoft.auth/SunSoft.Auth.Service; ASPNETCORE_URLS=\"http://localhost:5555\" dotnet run"

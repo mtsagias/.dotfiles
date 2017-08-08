@@ -5,11 +5,11 @@
 	excludesfile = /Users/manolis/.gitignore_global
 	editor = vim
 	quotepath = false
-[difftool "sourcetree"]
+[difftool "diffmerge"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+[mergetool "diffmerge"]
+  cmd = /Applications/DiffMerge.app/Contents/Resources/DiffMerge -merge -result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 	trustExitCode = true
 [github]
 	user = mtsagias
@@ -23,3 +23,13 @@
 	required = true
 [credential]
 	helper = osxkeychain
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
