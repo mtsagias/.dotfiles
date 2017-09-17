@@ -10,8 +10,12 @@ Host sunsoft-heroku
   IdentityFile ~/.ssh/sunsoft_rsa
   IdentitiesOnly yes
 
-
 Host heroku.private
   HostName heroku.com
   IdentityFile "/Users/manolis/.ssh/identity.heroku.private"
   IdentitiesOnly yes
+
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa

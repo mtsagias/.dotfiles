@@ -1,51 +1,52 @@
-ack
-at-spi2-atk
-boost
-bup
-coreutils
-ctags
-freetds
-geoip
-ghostscript
-git
-git-flow-avh
-gnutls
-gptfdisk
-gtk+3
-heroku
-hexedit
-hub
-imagemagick
-jbig2dec
-libgcrypt
-maven
-mercurial
-mmv
-mysql
-neovim
-netcat
-ossp-uuid
-p7zip
-perl
-phantomjs
-plantuml
-postgresql
-python3
-qt
-rbenv
-reattach-to-user-namespace
-ruby
-sbt
-serf
-ssh-copy-id
-subversion
-the_silver_searcher
-typescript
-unrar
-utf8proc
-vim
-wakeonlan
-watchman
-wemux
-wget
-zsh
+tap "homebrew/services"
+brew "ack"
+brew "at-spi2-atk"
+brew "boost"
+brew "bup"
+brew "coreutils"
+brew "ctags"
+brew "freetds"
+brew "geoip"
+brew "ghostscript"
+brew "git"
+brew "git-flow-avh"
+brew "gnutls"
+# brew "gptfdisk"
+brew "gtk+3"
+brew "heroku"
+brew "hexedit"
+brew "hub"
+brew "imagemagick"
+brew "jbig2dec"
+brew "libgcrypt"
+brew "maven"
+brew "mercurial"
+brew "mmv"
+brew "mysql"
+brew "neovim"
+brew "netcat"
+brew "ossp-uuid"
+brew "p7zip"
+brew "perl"
+brew "phantomjs"
+brew "plantuml"
+# brew "postgresql"
+brew "python3"
+brew "qt"
+brew "rbenv"
+brew "reattach-to-user-namespace"
+brew "ruby"
+brew "sbt"
+brew "serf"
+brew "ssh-copy-id"
+brew "subversion"
+brew "the_silver_searcher"
+brew "typescript"
+brew "unrar"
+brew "utf8proc"
+brew "vim"
+brew "wakeonlan"
+brew "watchman"
+brew "wemux"
+brew "wget"
+brew "zsh"
