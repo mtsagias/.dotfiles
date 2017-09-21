@@ -57,6 +57,6 @@ export ASPNETCORE_ENVIRONMENT="Development"
 alias dbdrop='dotnet ef database drop'
 alias dbupdate='dotnet ef database update'
 alias migcreate='dotnet ef migrations add initial'
-alias av_recreate_migrations='cd SunSoft.PMS.Model && dbdrop && rm Migrations/* && migcreate && dbupdate && cd ..'
+alias recreate_migrations='dbdrop && rm Migrations/* && migcreate && dbupdate'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
