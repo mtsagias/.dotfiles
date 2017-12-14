@@ -15,6 +15,18 @@ Host heroku.private
   IdentityFile "/Users/manolis/.ssh/identity.heroku.private"
   IdentitiesOnly yes
 
+Host gitlab.com-mtsunsoft
+  HostName gitlab.com
+  User mtsunsoft
+  IdentityFile ~/.ssh/sunsoft_rsa
+  IdentitiesOnly yes
+
+Host gitlab.com
+  HostName gitlab.com
+  User mtsagias
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+
 Host *
   AddKeysToAgent yes
   UseKeychain yes

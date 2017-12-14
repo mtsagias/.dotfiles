@@ -58,5 +58,6 @@ alias dbdrop='dotnet ef database drop'
 alias dbupdate='dotnet ef database update'
 alias migcreate='dotnet ef migrations add initial'
 alias recreate_migrations='dbdrop && rm Migrations/* && migcreate && dbupdate'
+alias azure-list-B='az vm list-skus --output table|grep -v NotAvailable|grep Standard_B'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
